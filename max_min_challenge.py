@@ -15,8 +15,10 @@ print(f'the max number is: {max_num}')
 def min_number(numbers):
 	min_num = 0
 	for number in numbers:
-		if min_num > number:
+		if min_num == 0:
 			min_num = number
+			if min_num > number:
+				min_num = number
 	return min_num
 
 min_num = min_number(numbers)
