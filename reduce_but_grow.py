@@ -9,7 +9,6 @@ def grow(arr):
 	total = 1
 	for num in arr:
 		total *= num
-	print(f"in for {total}")
 	return total
 
 num = grow(arr)
