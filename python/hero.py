@@ -2,12 +2,17 @@
 
 # Return True if yes, False otherwise :)
 
+# orginal attempt
+# def hero (bullets, dragons):
+#     return True if bullets/2 >= dragons else False
+
+# refractored
 def hero (bullets, dragons):
-    return True if bullets/2 >= dragons else False
+    return bullets/2 >= dragons
 
 # survive = hero(10, 5) #True
 # survive = hero(7, 4) #False
-# survive = hero(4, 5) #False
-survive = hero(100, 40) #True
+survive = hero(4, 5) #False
+# survive = hero(100, 40) #True
 
 print(survive)
