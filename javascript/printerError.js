@@ -14,14 +14,20 @@
 // s="aaaxbbbbyyhwawiwjjjwwm"
 // printer_error(s) => "8/22"
 
+// original attempt
+// function printerError(s) {
+//     count = 0;
+//     numOfOutOfErrors = s.match(/[^a-m]/g);
+//     if (numOfOutOfErrors) {
+//         count = numOfOutOfErrors.length;
+//     }
+//     return count + "/" + s.length
+// }    
+
+// clever attempt
 function printerError(s) {
-    count = 0;
-    numOfOutOfErrors = s.match(/[^a-m]/g);
-    if (numOfOutOfErrors) {
-        count = numOfOutOfErrors.length;
-    }
-    return count + "/" + s.length
-}    
+    return `${s.replace(/[a-m]/ig, '').length}/${s.length}`
+}
  
 // error = printerError("aaabbbbhaijjjm")
 // error = printerError("aaaxbbbbyyhwawiwjjjwwm")
