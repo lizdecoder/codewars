@@ -12,7 +12,9 @@
 // function validatePIN (pin){
 // /^-?\d+$/ all positive and negative whole numbers
 // /^\d+$/ all positive whole numbers 
+// '^([0-9]{4}|[0-9]{6})$' all positive numbers with length 4 or 6
 // /^\d+\.\d+$/ all positive floats
+
 //     if (pin.length === 4 || pin.length === 6) {
 //         console.log("made it here")
 //         return /^\d+$/.test(pin);
