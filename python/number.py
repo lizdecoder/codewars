@@ -18,8 +18,13 @@
 #         off_bus += stops[1]
 #     return on_bus - off_bus
 
+# clever solution
+# def number(bus_stops):
+#     return sum([stop[0] - stop[1] for stop in bus_stops])
+
+# clever solution
 def number(bus_stops):
-    return sum([stop[0] - stop[1] for stop in bus_stops])
+    return sum(on - off for on, off in bus_stops)
 
 people = number([[10,0],[3,5],[5,8]]) #5
 # people = number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]) #17
