@@ -9,8 +9,6 @@ function hoopCount(n) {
     return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";
 }
 
-// return cap - wait - on < 0 ? on + wait - cap : 0;
-
 // message = hoopCount(3) // "Keep at it until you get it"
 message = hoopCount(11) //"Great, now move on to tricks"
 console.log(message)
